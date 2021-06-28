@@ -132,7 +132,7 @@ function transform(oldObj) {
       }
     }
 return newPointStructure;
-};
+}
 
 function runProgram() {
   let wordToScore = initialPrompt();
