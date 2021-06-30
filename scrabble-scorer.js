@@ -44,14 +44,14 @@ function initialPrompt() {
 
 const simpleScore = function(word) {
   word = word.toUpperCase();
-  let letterPoints = 0;
-    for (let i = 0; i < word.length; i++) {
-      for (const pointValue in simplePointStructure) {
-        if (simplePointStructure[pointValue].includes(word[i])) {
-          letterPoints += Number(pointValue);
-        } 
-      }
-    }
+  let letterPoints = word.length;
+    // for (let i = 0; i < word.length; i++) {
+    //   for (const pointValue in simplePointStructure) {
+    //     if (simplePointStructure[pointValue].includes(word[i])) {
+    //       letterPoints += Number(pointValue);
+    //     } 
+    //   }
+    // }
   return letterPoints; 
 }
 
